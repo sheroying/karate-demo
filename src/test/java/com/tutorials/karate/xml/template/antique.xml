@@ -1,0 +1,48 @@
+<ad:ad locale="en_AU" version="1.13" xmlns:types="http://www.ebayclassifiedsgroup.com/schema/types/v1"
+       xmlns:cat="http://www.ebayclassifiedsgroup.com/schema/category/v1"
+       xmlns:loc="http://www.ebayclassifiedsgroup.com/schema/location/v1"
+       xmlns:ad="http://www.ebayclassifiedsgroup.com/schema/ad/v1"
+       xmlns:attr="http://www.ebayclassifiedsgroup.com/schema/attribute/v1"
+       xmlns:pic="http://www.ebayclassifiedsgroup.com/schema/picture/v1"
+       xmlns:user="http://www.ebayclassifiedsgroup.com/schema/user/v1"
+       xmlns:rate="http://www.ebayclassifiedsgroup.com/schema/rate/v1"
+       xmlns:reply="http://www.ebayclassifiedsgroup.com/schema/reply/v1"
+       xmlns:feed="http://www.ebayclassifiedsgroup.com/schema/feed/v1">
+    <ad:price>
+        <types:currency-iso-code>
+            <types:value localized-label="$">AUD</types:value>
+        </types:currency-iso-code>
+        <types:amount>#(price)</types:amount>
+        <types:price-type>
+            <types:value>SPECIFIED_AMOUNT</types:value>
+        </types:price-type>
+    </ad:price>
+    <ad:ad-type>
+        <ad:value>OFFERED</ad:value>
+    </ad:ad-type>
+    <ad:title>#(title)</ad:title>
+    <ad:description>#(description)</ad:description>
+    <ad:imprint/>
+    <ad:ad-address>
+        <types:full-address>#(address)</types:full-address>
+        <types:longitude/>
+        <types:latitude/>
+    </ad:ad-address>
+    <ad:email>#(email)</ad:email>
+    <ad:poster-contact-name>#(contactName)</ad:poster-contact-name>
+    <ad:phone/>
+    <cat:category id="#(categoryId)">
+        <cat:id-name>#(prefixCateName)</cat:id-name>
+        <cat:localized-name>#(categoryLocalizedName)</cat:localized-name>
+    </cat:category>
+    <loc:locations>
+        <loc:location localized-label="Postcode" type="LONG" id="#(location)">
+        </loc:location>
+    </loc:locations>
+    <attr:attributes>
+        <attr:attribute type="ENUM" localized-label="Condition" name="antiques_collectables_collectables.condition">
+            <attr:value>#(condition)</attr:value>
+        </attr:attribute>
+    </attr:attributes>
+    <pic:pictures/>
+</ad:ad>
